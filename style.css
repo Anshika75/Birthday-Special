@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    min-width: 100%;
+    background: #FDC830;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    background: linear-gradient(to right, #F37335, #FDC830);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Petit Formal Script', cursive;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+}
+.landing img{
+    width: 100%;
+    height: 100%;
+}
+main .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 30px;
+}
+main .row .imgbox{
+    height: 300px;
+    width: 300px;
+    background: #009FFF;
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    background: linear-gradient(to right, #ec2F4B, #009FFF); 
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    position: relative;
+}
+main .row .imgbox img{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+main .row .txtbox{
+    width: 100%;
+    padding: 20px;
+    background: rgb(0, 158, 255, 0.62  );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: rgb(255, 220, 246);
+    margin-top: 50px;
+}
+main .row .txtbox.tt{
+    background: rgba(236, 47, 75,0.62);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: rgb(255, 220, 246);
+}
+@media (min-width:880px){
+    main .row{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 75px 75px;
+    }
+    main .row.rr{
+        flex-direction: row-reverse;
+    }
+    main .row .txtbox{
+        width: 50%;
+        margin: 0;
+    }
+}
